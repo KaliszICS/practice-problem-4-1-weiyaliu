@@ -1,27 +1,40 @@
+/**
+	* File: Lesson 4.1: While Loops and accumulators
+	* Author: Weiya
+	*	Date Created: April 8, 2026
+	*	Date Last Modified: April 13, 2026
+	*/
 public class PracticeProblem {
 
 	public static void main(String args[]) {
 
+		System.out.println(seriesExclusive(7));
+
+	}
+	
+	public static String seriesInclusive (int num){
+		String word = "";
+		int num1 = 0;
+		
+		while (num1 < num) {
+			num1 = num1 + 1;
+			word = word + num1 +" ";
+		
+		}
+			word = word.trim();
+			return word;
 	}
 
-	public static void q1() {
-		//Write question 1 code here
-	}
+	public static String seriesExclusive (int num ) {
+		String word = "";
+		int num1 = 0;
 
-	public static void q2() {
-		//Write question 2 code here
+		while (num1 < num) {
+			
+			word = word + num1 + " ";
+			num1 = num1 + 1;
+			
+		}
+			return word.trim();
 	}
-
-	public static void q3() {
-		//Write question 3 code here
-	}
-
-	public static void q4() {
-		//Write question 4 code here
-	}
-
-	public static void q5() {
-		//Write question 5 code here
-	}
-
 }
